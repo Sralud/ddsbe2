@@ -11,4 +11,8 @@ use Illuminate\Database\Eloquent\Model;
         protected $fillable = ['username', 'password','gender', 'jobid'];
         public $timestamps = false;
         protected $primaryKey = 'id';
+
+        protected $hidden = [
+            'password',
+        ];
  }
